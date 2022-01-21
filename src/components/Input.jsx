@@ -1,17 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Data from "../userData.json";
 
 function Input(props) {
-  const [userInput, setUserInput] = useState("");
+  const [userName, setUserName] = useState("");
   const [newUser, addNewUser] = useState([]);
+  const [users, addUser] = useState(null);
 
   function handleChange(event) {
     const { value } = event.target;
-    setUserInput(value);
+    setUserName(value);
+    users.map((value) => {
+      value.email;
+    });
   }
+  function CheckUsers(value) {}
+  useEffect(() => {
+    fetch("http://localhost:8000/users")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        addUser(data);
+        console.log(users);
+      });
+  }, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const user = { email: "something", password: "something" };
+    const user = {};
 
     fetch("http://localhost:8000/users", {
       method: "POST",
@@ -28,7 +45,7 @@ function Input(props) {
         onChange={handleChange}
         type="text"
         placeholder="Username"
-        value={userInput}
+        value={userName}
       />
       <input type="password" placeholder="Password" />
       {!props.bool && <input type="password" placeholder="Confirm Password" />}

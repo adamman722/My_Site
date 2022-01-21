@@ -3,6 +3,7 @@
     {
       "email": "tarpeyadam@gmail.com",
       "password": "notEvenClose123$",
+      "isRegistered": true,
       "id": 1
     }
   ]

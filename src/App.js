@@ -10,21 +10,10 @@ import Inputs from "./components/Input";
 import MyButton from "./components/homeButtons";
 
 function App() {
-  const [users, addUser] = useState(null);
-  useEffect(() => {
-    fetch("http://localhost:8000/users")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        console.log(data);
-        addUser(data);
-        console.log(users);
-      });
-  }, []);
-
   return (
-    <div className="container">{users && <MyButton />}</div>
+    <div className="container">
+      <MyButton />
+    </div>
     // <div className="container">
     //   {users && <Inputs users={users} isRegistered={isReg} />}
     // </div>
