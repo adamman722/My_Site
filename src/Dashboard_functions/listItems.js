@@ -7,24 +7,25 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import ContactPageOutlinedIcon from "@mui/icons-material/ContactPageOutlined";
 import AppsIcon from "@mui/icons-material/Apps";
+import LogoutIcon from "@mui/icons-material/Logout";
 
 export const mainListItems = (
   <div>
     <ListItem button>
       <ListItemIcon>
-        <DashboardIcon />
+        <DashboardIcon style={{ color: "white" }} />
       </ListItemIcon>
       <ListItemText primary="Home" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <AppsIcon />
+        <AppsIcon style={{ color: "white" }} />
       </ListItemIcon>
       <ListItemText primary="Projects" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <ContactPageOutlinedIcon />
+        <ContactPageOutlinedIcon style={{ color: "white" }} />
       </ListItemIcon>
       <ListItemText primary="About me!" />
     </ListItem>
@@ -45,24 +46,11 @@ export const mainListItems = (
 
 export const secondaryListItems = (
   <div>
-    <ListSubheader inset>Saved reports</ListSubheader>
     <ListItem button>
       <ListItemIcon>
-        <AssignmentIcon />
+        <LogoutIcon style={{ color: "white" }} />
       </ListItemIcon>
-      <ListItemText primary="Current month" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="Last quarter" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="Year-end sale" />
+      <ListItemText primary="Let me out!" />
     </ListItem>
   </div>
 );
