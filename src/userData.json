@@ -1,10 +1,22 @@
 {
   "users": [
     {
-      "email": "tarpeyadam@gmail.com",
-      "password": "notEvenClose123$",
+      "Username": "tarpeyadam@gmail.com",
+      "Password": "Admain23$",
       "isRegistered": true,
       "id": 1
+    },
+    {
+      "Username": "newEmail@email.com",
+      "Password": "Adamman23$",
+      "isRegistered": true,
+      "id": 2
+    },
+    {
+      "Username": "asdasda",
+      "Password": "Adamman23$",
+      "isRegistered": true,
+      "id": 3
     }
   ]
 }

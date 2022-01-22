@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eb5e28;
+  font-weight: 300;
+  background: #fffcf2;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  margin: 10% auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.aTags {
+  color: #eb5e28;
+}
+
+.container h1 {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+input {
+  border: 1px solid #252422;
+  background-color: #403d39;
+  width: 250px;
+  border-radius: 5px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+}
+
+button {
+  appearance: none;
+  outline: 0;
+  background-color: #252422;
+  border: 0;
+  padding: 10px 15px;
+  color: #eb5e28;
+  border-radius: 5px;
+  width: 250px;
+  font-size: 18px;
+  margin: 5px;
+}
+button:hover {
+  opacity: 75%;
+}
+.nugget {
+  background-color: #252422;
+  padding: 15px 20px;
+  color: #eb5e28;
+  border-radius: 5px;
+  width: 250px;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 5px;
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#rotate {
+  animation: myMove infinite 1s linear;
+}
+p {
+  position: relative;
+  margin: auto;
+  padding: 20px 30px 20px 30px;
+}
+
+#typeWriter {
+  font-family: "Courier";
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  opacity: 0;
+  -webkit-animation: type2 10s steps(40, end);
+  animation: type2 5s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes myMove {
+  from {
+    /* transform: rotate(0deg); */
+  }
+  to {
+    /* transform: rotate(360deg); */
+    color: #fffcf2;
+  }
+}
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}

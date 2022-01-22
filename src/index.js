@@ -4,8 +4,9 @@ import "./index.css";
 import App from "./App";
 import About from "./Pages/About";
 import Home from "./Pages/Home";
+import Project from "./Pages/Projects";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-const right = false;
+
 ReactDOM.render(
   <StrictMode>
     <BrowserRouter>
@@ -15,6 +16,7 @@ ReactDOM.render(
         <Route path="/About" element={<About />} />
         <Route path="/Home/Login" element={<Home bool={true} />} />
         <Route path="/Home/Reg" element={<Home bool={false} />} />
+        <Route path="/Project" element={<Project />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
