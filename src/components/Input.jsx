@@ -77,7 +77,7 @@ function Input(props) {
     if (foundUser.Password !== password) {
       setPasswordMatches(false);
     } else {
-      nav("/Project");
+      nav("/LandingPage");
     }
     console.log(foundUser);
     e.preventDefault();

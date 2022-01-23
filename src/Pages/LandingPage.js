@@ -1,7 +1,7 @@
 import React from "react";
 import Dashboard from "../components/Dashboard";
 
-function Projects() {
+function LandingPage() {
   return <div>{Dashboard()}</div>;
 }
-export default Projects;
+export default LandingPage;

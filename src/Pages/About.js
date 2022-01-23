@@ -1,10 +1,6 @@
 import React from "react";
-
+import AboutMe_page from "../components/AboutMe_page";
 function About() {
-  return (
-    <div>
-      <h1>Hello world from About</h1>
-    </div>
-  );
+  return <AboutMe_page />;
 }
 export default About;

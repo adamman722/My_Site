@@ -78,6 +78,19 @@ p {
   position: relative;
   margin: auto;
   padding: 20px 30px 20px 30px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+#aboutMeList {
+  text-align: center;
+}
+#aboutMeList li {
+  list-style-type: none;
+  color: red;
+}
+#aboutMeList a {
+  text-decoration: none;
+  color: red;
 }
 
 #typeWriter {
@@ -136,3 +149,6 @@ p {
 }
 
 /* Below is the video things */
+#itemAuto {
+  margin: auto;
+}

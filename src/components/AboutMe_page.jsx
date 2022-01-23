@@ -15,7 +15,7 @@ import Paper from "@mui/material/Paper";
 import Link from "@mui/material/Link";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import myVideo from "../Media_Videos/video.mp4";
+import myPhoto from "../Media_Photos/image0.jpeg";
 
 import ReactPlayer from "react-player";
 
@@ -39,7 +39,7 @@ function Copyright(props) {
   );
 }
 
-const drawerWidth = 240;
+const drawerWidth = 200;
 
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
@@ -97,7 +97,7 @@ function DashboardContent() {
 
   return (
     <ThemeProvider theme={mdTheme}>
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: "flex", MozTransition: "scale(1.3)" }}>
         <CssBaseline />
         <AppBar
           position="absolute"
@@ -130,7 +130,7 @@ function DashboardContent() {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Welcome to my page!
+              About Meeeeeeeeeeeeeeeeeeeee
             </Typography>
           </Toolbar>
         </AppBar>
@@ -163,14 +163,14 @@ function DashboardContent() {
             height: "100vh",
             overflow: "auto",
           }}
-          alignItems="left"
         >
           <Toolbar />
 
-          <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }} fixed>
+          <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
             <Grid container spacing={4}>
-              {/* Chart */}
-              <Grid item xs={0} md={0} lg={5}>
+              {/* {About me card} */}
+
+              <Grid item xs={0} md={0} lg={5} id="itemAuto">
                 <Paper
                   sx={{
                     boxShadow:
@@ -178,94 +178,47 @@ function DashboardContent() {
                     p: 2,
                     display: "flex",
                     flexDirection: "column",
-                    height: 600,
-                    maxWidth: 700,
                   }}
                 >
-                  <ReactPlayer
-                    controls
-                    url={myVideo}
-                    style={{ display: "inherit" }}
-                    width=""
-                    height=""
-                  />
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Voluptatum commodi impedit est iure praesentium, cum vitae eum
-                  odio eligendi. Hic, quo quidem a non distinctio pariatur
-                  voluptas dolorem? Ratione minus modi quia nemo eveniet, totam
-                  maiores accusamus exercitationem magnam consequatur aut,
-                  perferendis laudantium, tenetur distinctio rem a laborum
-                  voluptatum facere quos. Vitae assumenda illo, officiis
-                  expedita quo molestiae similique neque.
-                </Paper>
-              </Grid>
-              {/* Recent Deposits */}
-              <Grid item xs={12} md={4} lg={3}>
-                <Paper
-                  sx={{
-                    boxShadow:
-                      "4px 4px 3px 0px rgb(255 105 180 / 60%), 0px 1px 1px 0px rgb(255 105 180 / 82%), 4px 1px 3px 0px rgb(255 105 180 / 70%)",
-                    p: 2,
-                    display: "inline-table",
-                    flexDirection: "column",
-                    height: 240,
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
-                  sit vitae ab eveniet recusandae iste, natus labore sed
-                  reiciendis animi eligendi fuga ratione atque eum, eius
-                  dignissimos molestiae ipsum magnam eos veritatis excepturi
-                  porro mollitia. Reprehenderit, veritatis! Pariatur cupiditate
-                  impedit explicabo, quasi laudantium quae voluptates totam
-                  consectetur nisi perferendis exercitationem ipsa repudiandae,
-                  laboriosam vitae distinctio doloremque earum voluptatem
-                  necessitatibus sed!
-                </Paper>
-              </Grid>
-
-              <Grid item sm={5}>
-                <Paper
-                  sx={{
-                    boxShadow:
-                      "4px 4px 3px 0px rgb(255 105 180 / 60%), 0px 1px 1px 0px rgb(255 105 180 / 82%), 4px 1px 3px 0px rgb(255 105 180 / 70%)",
-                    p: 2,
-                    display: "inline-table",
-                    flexDirection: "column",
-                    height: 240,
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
-                  sit vitae ab eveniet recusandae iste, natus labore sed
-                  reiciendis animi eligendi fuga ratione atque eum, eius
-                  dignissimos molestiae ipsum magnam eos veritatis excepturi
-                  porro mollitia. Reprehenderit, veritatis! Pariatur cupiditate
-                  impedit explicabo, quasi laudantium quae voluptates totam
-                  consectetur nisi perferendis exercitationem ipsa repudiandae,
-                  laboriosam vitae distinctio doloremque earum voluptatem
-                  necessitatibus sed!
-                </Paper>
-              </Grid>
-              {/* Recent Orders */}
-
-              <Grid item xs={5}>
-                <Paper
-                  sx={{
-                    p: 2,
-                    display: "flex",
-                    flexDirection: "column",
-                    boxShadow:
-                      "4px 4px 3px 0px rgb(255 105 180 / 60%), 0px 1px 1px 0px rgb(255 105 180 / 82%), 4px 1px 3px 0px rgb(255 105 180 / 70%)",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
-                  sit vitae ab eveniet recusandae iste, natus labore sed
-                  reiciendis animi eligendi fuga ratione atque eum, eius
-                  dignissimos molestiae ipsum magnam eos veritatis excepturi
-                  porro mollitia. Reprehenderit, veritatis! Pariatur cupiditate
-                  impedit explicabo, quasi laudantium quae voluptates totam
-                  consectetur nisi perferendis exercitationem ipsa repudiandae,
-                  laboriosam vitae distinctio doloremque earum voluptatem
-                  necessitatibus sed!
+                  <img src={myPhoto} style={{}}></img>
+                  <p style={{}}>
+                    To whomever may stumble across this page hello, hi, welcome,
+                    and I am sorry.
+                  </p>
+                  <p>
+                    A little about me, I am an aspiring software developer that
+                    has my hands in quite a few different
+                    languages/frameworks/libraries such as:{" "}
+                    <ul id="aboutMeList">
+                      <li>C# .Net Core</li>
+                      <li>Microsoft SQL Server</li>
+                      <li>HTML5</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                      <li>React.js</li>
+                      <li>Vue</li>
+                      <li>Selenium </li>
+                      <li>SpecFlow</li>
+                    </ul>
+                    This whole site was created as a little project for myself
+                    to test my skills of React and JavaScript... I know it's not
+                    the greatest but everyday I get a little better and better
+                  </p>
+                  <ul id="aboutMeList">
+                    <li>Contact Me:</li>
+                    <li>tarpeyadam@gmail.com</li>
+                    <li>586-565-8464</li>
+                    <li>
+                      {" "}
+                      <a
+                        href="https://www.linkedin.com/in/adam-tarpey-ba134b86/"
+                        target="_blank"
+                      >
+                        My Linkedin
+                      </a>
+                    </li>
+                    <li>Github coming soon!</li>
+                  </ul>
                 </Paper>
               </Grid>
             </Grid>
@@ -277,7 +230,7 @@ function DashboardContent() {
   );
 }
 
-export default function Dashboard() {
+export default function AboutMe_page() {
   return <DashboardContent />;
 }
 
