@@ -95,6 +95,7 @@ function Input(props) {
             type="text"
             placeholder="Username"
             value={userName}
+            className="inputLoginPage"
           />
           {isThere ? null : (
             <p>
@@ -114,6 +115,7 @@ function Input(props) {
             })}
             type="text"
             placeholder="Username"
+            className="inputLoginPage"
           />
           {errors?.Username?.type === "pattern" && <p>Cant leave it blank</p>}
         </div>
@@ -129,6 +131,7 @@ function Input(props) {
             type="password"
             placeholder="Password"
             value={password}
+            className="inputLoginPage"
           />
           {passwordMatches === false ? <p>Wrong Password Try again</p> : null}
         </div> //Login page
@@ -142,6 +145,7 @@ function Input(props) {
             })}
             type="password"
             placeholder="Password"
+            className="inputLoginPage"
           />
 
           {errors?.Password?.type === "pattern" && (
@@ -170,6 +174,7 @@ function Input(props) {
             })}
             type="password"
             placeholder="Confirm Password"
+            className="inputLoginPage"
           />
 
           {errors?.ConfirmPassword?.type === "pattern" && (
@@ -179,7 +184,9 @@ function Input(props) {
       )}
 
       {/* onSubmit={props.bool ? handleChange : handleSubmit} */}
-      <button type="submit">{props.bool ? "Login" : "Register"}</button>
+      <button type="submit" className="buttonLoginPage">
+        {props.bool ? "Login" : "Register"}
+      </button>
     </form>
   );
 }

@@ -8,11 +8,11 @@ function Button() {
   return (
     <div>
       <nav>
-        <NavLink to={"/Login"} className="nugget">
+        <NavLink to={"/Login"} className="nugget buttonLoginPage">
           Have a account
         </NavLink>
         <p>or</p>
-        <NavLink to={"/Register"} className="nugget">
+        <NavLink to={"/Register"} className="nugget buttonLoginPage">
           Register
         </NavLink>
       </nav>

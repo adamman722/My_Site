@@ -18,7 +18,7 @@ const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Home" />
     </ListItemButton>
-    <ListItem button>
+    <ListItem button component="a" href="/Projects">
       <ListItemIcon>
         <AppsIcon style={{ color: "white" }} />
       </ListItemIcon>
