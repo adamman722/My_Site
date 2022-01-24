@@ -130,7 +130,7 @@ function DashboardNavBar(props) {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              About Meeeeeeeeeeeeeeeeeeeee
+              My projects
             </Typography>
           </Toolbar>
         </AppBar>

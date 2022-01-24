@@ -11,7 +11,9 @@ function Button() {
         <NavLink to={"/Login"} className="nugget buttonLoginPage">
           Have a account
         </NavLink>
-        <p>or</p>
+
+        <p className="loginPage_PTags">OR</p>
+
         <NavLink to={"/Register"} className="nugget buttonLoginPage">
           Register
         </NavLink>

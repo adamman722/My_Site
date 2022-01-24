@@ -98,12 +98,21 @@ function Input(props) {
             className="inputLoginPage"
           />
           {isThere ? null : (
-            <p>
-              Ummmmm try to{" "}
-              <Link to="/Home/Reg" className="aTags">
-                register
-              </Link>
-            </p>
+            <div className="errors_on_LoginsContainer">
+              <p className="specialPTag">
+                Ummmmm try to{" "}
+                <Link
+                  to="/Home/Reg"
+                  className="aTags"
+                  style={{
+                    fontSize: "20px",
+                    color: "#ff69b4",
+                  }}
+                >
+                  register
+                </Link>
+              </p>
+            </div>
           )}
         </div>
       ) : (
@@ -121,7 +130,7 @@ function Input(props) {
         </div>
       )}
       {props.bool ? (
-        <div>
+        <div className="confirmPassword_Container">
           <input
             onClick={CheckingUsers}
             onChange={(e) => {
@@ -137,7 +146,7 @@ function Input(props) {
         </div> //Login page
       ) : (
         //Register Page
-        <div>
+        <div className="confirmPassword_Container">
           <input
             {...register("Password", {
               pattern:
@@ -149,8 +158,8 @@ function Input(props) {
           />
 
           {errors?.Password?.type === "pattern" && (
-            <div>
-              <ul>
+            <div className="errors_on_LoginsContainer">
+              <ul className="errors_on_Logins">
                 <li>
                   Ya password week bruh....I feel like you would know the
                   standards by now...
@@ -166,7 +175,7 @@ function Input(props) {
       )}
 
       {!props.bool && (
-        <div>
+        <div className="confirmPassword_Container">
           <input
             {...register("ConfirmPassword", {
               pattern:
@@ -178,7 +187,11 @@ function Input(props) {
           />
 
           {errors?.ConfirmPassword?.type === "pattern" && (
-            <p>I know life is hard.....Just don't be dumb.</p>
+            <div className="errors_on_LoginsContainer">
+              <p className="specialPTag">
+                I know life is hard.....Just don't be dumb.
+              </p>
+            </div>
           )}
         </div>
       )}
