@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router";
 import { NavLink, Outlet } from "react-router-dom";
-import Login from "../Pages/Login";
 
 function Button() {
   function ToLogin(event) {}

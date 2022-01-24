@@ -16,6 +16,7 @@ import Link from "@mui/material/Link";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import myVideo from "../Media_Videos/video.mp4";
+import BackGround from "../Media_Videos/RainyRoofView.gif";
 
 import ReactPlayer from "react-player";
 
@@ -102,7 +103,7 @@ function DashboardContent() {
         <AppBar
           position="absolute"
           open={open}
-          style={{ backgroundColor: "hotpink" }}
+          style={{ backgroundColor: "#ca0d5d" }}
         >
           <Toolbar
             sx={{
@@ -158,10 +159,10 @@ function DashboardContent() {
         <Box
           component="main"
           sx={{
-            backgroundColor: "#252422",
             flexGrow: 3,
             height: "100vh",
             overflow: "auto",
+            backgroundImage: "url('../Media_Videos/RainyRoofView.gif')",
           }}
           alignItems="left"
         >

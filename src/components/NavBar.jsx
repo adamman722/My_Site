@@ -102,7 +102,7 @@ function DashboardNavBar(props) {
         <AppBar
           position="absolute"
           open={open}
-          style={{ backgroundColor: "hotpink" }}
+          style={{ backgroundColor: "#ca0d5d" }}
         >
           <Toolbar
             sx={{
@@ -158,10 +158,10 @@ function DashboardNavBar(props) {
         <Box
           component="main"
           sx={{
-            backgroundColor: "#252422",
             flexGrow: 3,
             height: "100vh",
             overflow: "auto",
+            backgroundImage: "url('../Media_Videos/RainyRoofView.gif')",
           }}
         >
           <Toolbar />
