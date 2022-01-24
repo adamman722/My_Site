@@ -126,7 +126,12 @@ function Input(props) {
             placeholder="Username"
             className="inputLoginPage"
           />
-          {errors?.Username?.type === "pattern" && <p>Cant leave it blank</p>}
+          {errors?.Username?.type === "pattern" && (
+            <div className="errors_on_LoginsContainer">
+              {" "}
+              <p className="specialPTag">Cant leave it blank</p>
+            </div>
+          )}
         </div>
       )}
       {props.bool ? (
@@ -142,7 +147,12 @@ function Input(props) {
             value={password}
             className="inputLoginPage"
           />
-          {passwordMatches === false ? <p>Wrong Password Try again</p> : null}
+          {passwordMatches === false ? (
+            <div className="errors_on_LoginsContainer">
+              {" "}
+              <p className="specialPTag">Wrong Password Try again</p>
+            </div>
+          ) : null}
         </div> //Login page
       ) : (
         //Register Page
