@@ -180,7 +180,7 @@ function DashboardContent() {
                     flexDirection: "column",
                   }}
                 >
-                  <img src={myPhoto} style={{}}></img>
+                  <img src={myPhoto} className="thePhotoOfMeeeee"></img>
                   <p style={{}}>
                     To whomever may stumble across this page hello, hi, welcome,
                     and I am sorry.
