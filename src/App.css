@@ -227,9 +227,80 @@ div#StartOfGirds > div {
   position: relative;
   padding: 0.5rem;
   font-family: "Architects Daughter", cursive;
-  list-style-type: circle;
+  list-style-type: disclosure-closed;
   list-style-position: inside;
   font-weight: 800;
   font-size: x-large;
   color: #fe28a2;
+}
+
+/* Pokemon API Stuffffff */
+
+.pokemonFullContainer {
+  background-image: radial-gradient(#ff69b4 7.2%, transparent);
+  background-size: 25px 25px;
+  border-radius: 10px;
+}
+.pokemonTable {
+  display: table;
+  max-width: 20em;
+  float: right;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.pokemonTableRow {
+  display: table-row;
+}
+.pokemonTableHeading {
+  background-color: violet;
+  display: table-header-group;
+  font-weight: bold;
+}
+.pokemonTableCell,
+.pokemonTableHead {
+  border: 1px solid black;
+  display: table-cell;
+  padding: 5px 13px;
+}
+.pokemonTableFoot {
+  background-color: #eee;
+  display: table-footer-group;
+}
+.pokemonTableBody {
+  display: table-row-group;
+}
+.pokemonTableCell:nth-child(1n) {
+  background-color: #ff69b4;
+}
+.pokemonContainer {
+  display: flex;
+  opacity: 0.9;
+
+  justify-content: center;
+}
+.pokemonImg {
+  height: 16em;
+}
+.pokemonForm {
+  padding: 10px 10px 10px 10px;
+}
+
+.pokemonInput {
+  box-sizing: border-box;
+  border-color: #ff69b4;
+  font-size: 2rem;
+  padding: 1rem;
+  display: block;
+  margin: 0rem auto;
+  box-shadow: 4px 4px 3px 0px rgb(255 105 180 / 60%),
+    0px 1px 1px 0px rgb(255 105 180 / 82%), 4px 1px 3px 0px rgb(0 0 0 / 70%);
+  border-radius: 10px;
+  background-image: url("https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-search-seo-dreamstale-lineal-dreamstale-7.png");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+.pokemonInput[type="text"] {
+  padding: 8px 20px 12px 45px;
 }
