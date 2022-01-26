@@ -30,8 +30,9 @@ function Pokemon(params) {
     }
   };
 
-  const handleChange = (e) => {
-    setPokemon(e.target.value);
+  const handleChange = (e, newInputValue) => {
+    console.log(newInputValue);
+    setPokemon(newInputValue);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -79,12 +80,12 @@ function Pokemon(params) {
     <div className="pokemonFullContainer">
       <form onSubmit={handleSubmit} className="pokemonForm">
         <label htmlFor="">
-          {/* <Autocomplete
+          <Autocomplete
             options={pokemonNames}
+            onInputChange={handleChange}
             renderInput={(params) => (
               <div ref={params.InputProps.ref}>
                 <input
-                  onChange={handleChange}
                   value={pokemon}
                   {...params.inputProps}
                   type="text"
@@ -93,13 +94,13 @@ function Pokemon(params) {
                 />
               </div>
             )}
-          /> */}
-          <input
+          />
+          {/* <input
             type="text"
             onChange={handleChange}
             placeholder="Enter pokemon name"
             className="pokemonInput"
-          />
+          /> */}
         </label>
         <RadioGroup
           aria-labelledby="demo-error-radios"
