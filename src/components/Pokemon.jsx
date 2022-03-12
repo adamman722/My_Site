@@ -78,6 +78,28 @@ function Pokemon(params) {
 
   return (
     <div className="pokemonFullContainer">
+      <RadioGroup
+        aria-labelledby="demo-error-radios"
+        name="quiz"
+        value={value}
+        onChange={handleRadioChange}
+        style={{
+          flexDirection: "row",
+          justifyContent: "center",
+          fontWeight: "bold",
+        }}
+      >
+        <FormControlLabel
+          value="Shinny"
+          control={<Radio style={{ color: "black" }} />}
+          label="Shinny"
+        />
+        <FormControlLabel
+          value="Normal"
+          control={<Radio style={{ color: "black" }} />}
+          label="Normal"
+        />
+      </RadioGroup>
       <form onSubmit={handleSubmit} className="pokemonForm">
         <label htmlFor="">
           <Autocomplete
@@ -102,28 +124,12 @@ function Pokemon(params) {
             className="pokemonInput"
           /> */}
         </label>
-        <RadioGroup
-          aria-labelledby="demo-error-radios"
-          name="quiz"
-          value={value}
-          onChange={handleRadioChange}
-          style={{
-            flexDirection: "row",
-            justifyContent: "center",
-            fontWeight: "bold",
-          }}
-        >
-          <FormControlLabel
-            value="Shinny"
-            control={<Radio style={{ color: "black" }} />}
-            label="Shinny"
-          />
-          <FormControlLabel
-            value="Normal"
-            control={<Radio style={{ color: "black" }} />}
-            label="Normal"
-          />
-        </RadioGroup>
+        <div className="instructions-box">
+          <p>
+            Hit enter on your keyboard when you are done typing <br />
+            We don't deal with submit buttons here in these parks.....yet
+          </p>
+        </div>
       </form>
 
       {pokemonData.map((data) => {

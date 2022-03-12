@@ -221,6 +221,11 @@ div#StartOfGirds > div {
   padding-right: 10px;
 }
 
+.instructions-box p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
 .pokemonTableRow {
   display: table-row;
 }
@@ -255,7 +260,7 @@ div#StartOfGirds > div {
   height: 16em;
 }
 .pokemonForm {
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 0px 10px;
 }
 
 .pokemonInput {
@@ -280,4 +285,11 @@ div#StartOfGirds > div {
 
 .thePhotoOfMeeeee {
   border-radius: 100px;
+}
+.what-i-know-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.what-i-know-box p {
+  color: red;
 }

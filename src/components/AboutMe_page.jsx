@@ -17,7 +17,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import myPhoto from "../Media_Photos/image0.jpeg";
 
-import ReactPlayer from "react-player";
+import aboutMeData from "./Extra_Data/aboutme";
 
 import { mainListItems, secondaryListItems } from "../listItems";
 
@@ -189,17 +189,11 @@ function DashboardContent() {
                     A little about me, I am an aspiring software developer that
                     has my hands in quite a few different
                     languages/frameworks/libraries such as:{" "}
-                    <ul id="aboutMeList">
-                      <li>C# .Net Core</li>
-                      <li>Microsoft SQL Server</li>
-                      <li>HTML5</li>
-                      <li>CSS</li>
-                      <li>JavaScript</li>
-                      <li>React.js</li>
-                      <li>Vue</li>
-                      <li>Selenium </li>
-                      <li>SpecFlow</li>
-                    </ul>
+                    <div className="what-i-know-box">
+                      {aboutMeData.map((Skills) => {
+                        return <p>{Skills}</p>;
+                      })}
+                    </div>
                     This whole site was created as a little project for myself
                     to test my skills of React and JavaScript... I know it's not
                     the greatest but everyday I get a little better and better
@@ -217,7 +211,14 @@ function DashboardContent() {
                         My Linkedin
                       </a>
                     </li>
-                    <li>Github coming soon!</li>
+                    <li>
+                      {" "}
+                      <a href="https://github.com/adamman722" target="_blank">
+                        My Github
+                      </a>
+                      <li>Don't worry each link will take you to new tab...</li>
+                      <li>...as it is suppose to do.</li>
+                    </li>
                   </ul>
                 </Paper>
               </Grid>
